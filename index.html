@@ -65,15 +65,29 @@
 				background-color: lightgreen;
 			}
 
+			.data-href { 
+				cursor: pointer; 
+			}
+
     	</style>
     </head>
     <body>
-		<!-- <table width="100%" height="5px">
+		<table width="100%" height="5px">
 			<tr>
-				<td class="highlight red"></td> href="https://google.com">bka</td>
-				<td class="highlight blue">also</td>
+				<td class="highlight green data-href" onclick="document.getElementById('data-frame').src='https://share.streamlit.io/volodymyrss/streamlit-spiacs/app.py';">
+					INTEGRAL Transient Quick Look
+				</td>
+				<td class="highlight red data-href" onclick="document.getElementById('data-frame').src='https://share.streamlit.io/volodymyrss/streamlit-cc/app.py';">
+					INTEGRAL Cross-Calibration Dashboard (partially UNIGE internal)
+				</td>
+				<td class="highlight blue data-href" onclick="document.getElementById('data-frame').src='https://streamlit-cc.obsuks1.unige.ch/';">
+					INTEGRAL Multi-Messenger Workflows (UNIGE internal)
+				</td>
+				<!-- <td class="highlight green data-href" onclick="document.getElementById('data-frame').src='streamlit-cc.obsuks1.unige.ch/';">
+					INTEGRAL Multi-Messenger Workflows (UNIGE internal)
+				</td> -->
 			</tr>
-		</table> -->
+		</table>
 		
     	<iframe src="https://share.streamlit.io/volodymyrss/streamlit-spiacs/app.py"
     			frameborder="0"
@@ -81,7 +95,8 @@
     			marginwidth="0"
     			width="100%"
     			height="100%"
-    			scrolling="auto">
+    			scrolling="auto"
+				id="data-frame">
     </iframe>
     </body>
     </html>
